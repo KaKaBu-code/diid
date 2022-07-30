@@ -1,0 +1,125 @@
+*::selection {
+  background: #d9534f;
+  color: white;
+}
+.content {
+  width: 100%;
+}
+.content .content-l {
+  display: inline-block;
+  float: left;
+  width: 65%;
+}
+.content .content-l .main-content {
+  margin-top: 30px;
+  float: right;
+  padding-right: 25px;
+}
+.content .content-l .main-content .article {
+  text-align: center;
+  box-sizing: border-box;
+  width: 790px;
+  background-color: rgba(230, 238, 232, 0.65);
+  box-shadow: 0px 0px 8px black;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  padding: 19px;
+}
+.content .content-l .main-content .article:hover {
+  box-shadow: 0 0 35px 8px black;
+}
+.content .content-l .main-content .article .nav {
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+  font-size: 12px;
+}
+.content .content-l .main-content .article .nav span {
+  float: left;
+}
+.content .content-l .main-content .article .nav .div {
+  margin: 0 1em;
+}
+.content .content-l .main-content .article .nav .classes {
+  color: #d2322d;
+}
+.content .content-l .main-content .article h1 {
+  color: #3d4450;
+  font-size: 32px;
+  margin: 0 auto;
+  text-align: center;
+}
+.content .content-l .main-content .article h1 a {
+  color: #3d4450;
+  transition: color 0.5s;
+}
+.content .content-l .main-content .article h1 a:hover {
+  color: #d2322d;
+}
+.content .content-l .main-content .article .tags {
+  text-align: center;
+  margin: 18px 0;
+}
+.content .content-l .main-content .article .tags .tag-item {
+  background-color: rgba(10, 10, 0, 0.7);
+  display: inline-block;
+  padding: 0.2em 0.6em 0.3em;
+  font-size: 75%;
+  font-weight: bold;
+  line-height: 1;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25em;
+  transition: background-color 0.5s;
+}
+.content .content-l .main-content .article .tags .tag-item:hover {
+  background-color: #d2322d;
+}
+.content .content-l .main-content .article .images .head {
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  border-left: 5px solid #00bfff;
+  font-size: 12pt;
+  color: #6699FF;
+  font-weight: bold;
+}
+.content .content-l .main-content .article .images .imgs-list {
+  box-sizing: border-box;
+}
+.content .content-l .main-content .article .images .imgs-list .img-item {
+  padding: 10px 31px;
+}
+.content .content-l .main-content .article .images .imgs-list .img-item .img {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  border-radius: 4px;
+}
+.content .content-l .main-content .article .intro {
+  margin: 65px 0;
+}
+.content .content-l .main-content .article .intro .head {
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  border-left: 5px solid #00bfff;
+  font-size: 12pt;
+  color: #6699FF;
+  font-weight: bold;
+}
+.content .content-l .main-content .article .intro .body {
+  text-align: left;
+  font-size: 12px ;
+  padding: 15px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #468847;
+  background-color: #dff0d8;
+}
+/*# sourceMappingURL=article.css.map */

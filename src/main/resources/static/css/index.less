@@ -1,0 +1,208 @@
+@keyframes intro-text-transform {
+    0% {
+        transform: translateZ(500px);
+    }
+    100% {
+        transform: translateZ(0px);
+    }
+
+}
+
+@keyframes img-transform {
+    0% {
+        transform: translateZ(0);
+    }
+    100% {
+        transform: translateZ(150px);
+    }
+
+}
+
+// 内容区域样式
+.content {
+    width: 100%;
+    .content-l {
+        display: inline-block;
+        float: left;
+        width: 65%;
+        .main-content {
+            margin-top: 30px;
+            float: right;
+            padding-right: 25px;
+            .notice {
+                min-height: 20px;
+                width: 752px;
+                padding: 19px;
+                margin-bottom: 30px;
+                border-radius: 4px;
+                background-color: rgba(230,238,232,0.65);
+                box-shadow: 0px 0px 8px black;
+                color: rgb(255, 0, 0);
+                font-size: large;
+                .notice-close {
+                    float: right;
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: #25292f;
+                    text-shadow: 0 1px 0 #ffffff;
+                    padding: 0;
+                    margin-top: 4px;
+                    cursor: pointer;
+                    background: transparent;
+                    border: 0;
+                }
+            }
+            .article {
+                text-align: center;
+                box-sizing: border-box;
+                width: 790px;
+                height: 608px;
+                background-color: rgba(230,238,232,0.65);
+                box-shadow: 0px 0px 8px black;
+                border-radius: 4px;
+                margin-bottom: 30px;
+                &:hover {
+                    box-shadow: 0 0 35px 8px black;
+                }
+                h1 {
+                    display: inline-block;
+                    color: rgb(255, 255, 255);
+                    opacity: 0.8;
+                    background: rgb(30, 199, 230);
+                    padding: 2px;
+                    margin: 20px;
+                    border-radius: 5px;
+                    font-size: 25px;
+                    font-weight: bold;
+                }
+                .tags {
+                    text-align: center;
+                    margin-bottom: 20px;
+                    .tag-item {
+                        background-color: rgba(10,10,0,0.7);
+                        padding: .2em .6em .3em;
+                        font-size: 75%;
+                        font-weight: bold;
+                        line-height: 1;
+                        color: #ffffff;
+                        text-align: center;
+                        white-space: nowrap;
+                        vertical-align: baseline;
+                        border-radius: .25em;
+                        transition: background-color 0.5s;
+                        &:hover {
+                            background-color: #d2322d;
+                        }
+                    }
+                }
+                .box {
+                    display: inline-block;
+                    box-sizing: border-box;
+                    width: 95%;
+                    height: 75%;
+                    background-color: rgba(230,238,232,0.65);
+                    box-shadow: 0px 0px 8px black;
+                    border: 1px solid transparent;
+                    border-radius: 4px;
+                    overflow: hidden;
+                    text-align: center;
+
+                    &:hover {
+                        box-shadow: 0 0 25px 5px black;
+                    }
+                    .box-img {
+                        margin-top: 18px;
+                        display: inline-block;
+                        box-sizing: border-box;
+                        height: 92%;
+                        width: 95%;
+                        border-radius: 4px;
+                        background-size: cover;
+                        position: relative;
+                        transform-style: preserve-3d;
+                        perspective: 800px;
+                        overflow: hidden;
+                        &:hover > .image {
+                            animation: img-transform .5s forwards;
+
+                        }
+                        .image {
+                            width: 100%;
+                            height: 100%;
+                        }
+                        .box-introduce {
+                            position: absolute;
+                            overflow: hidden;
+                            left: 0;
+                            top: 0;
+                            display: none;
+                            width: 100%;
+                            height: 100%;
+                            transition: all 1.5s ease-out;
+                            transform-style: preserve-3d;
+                            perspective: 800px;
+                            a {
+                                word-break: break-all;
+                                word-wrap: break-word;
+                                display: inline-block;
+                                padding: 20px 10px 0;
+                                width: 100%;
+                                height: 100%;
+                                color: #d2d2d2;
+                                font-size: 1.5em;
+                                font-style: italic;
+                            }
+                        }
+                        &:hover .box-introduce {
+                            display: block;
+                            color: #3d4450;
+                            background-color: rgba(0, 0, 0, 0.35);
+                            a {
+                                animation: intro-text-transform 0.5s ease-in-out;
+                            }
+                        }
+                    }
+                }
+            }
+            .pagination {
+                width: 790px;
+                height: 40px;
+                margin-bottom: 30px;
+                .list {
+                    float: right;
+                    li {
+                        overflow: hidden;
+                        height: 100%;
+                        margin-left: 10px;
+                        border-radius: 4px;
+                        display: inline-block;
+                        border: 2px solid rgb(107,105,214);
+                        font-size: 12px;
+                        cursor: default;
+                        &.pg-active {
+                            background-color: rgb(107,105,214);
+                        }
+                        &:hover {
+                            background-color: rgb(107,105,214);
+                        }
+                        a {
+                            padding: 6px 12px;
+                            display: inline-block;
+                            overflow: hidden;
+                            height: 100%;
+                            width: 100%;
+                            color: white;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+    .content-r {
+    }
+}
+
+
+
+

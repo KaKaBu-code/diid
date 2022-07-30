@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.56.10:13307/blog
+    username: root
+    password: "root"
+
+sylvie:
+  name: sylvie233
+  pagesize: 3

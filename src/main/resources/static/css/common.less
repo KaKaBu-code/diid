@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: white;
+    font-size: 16px;
+    min-width: 350px;
+    background-image: url("/img/background/bg_1.png");
+}
+
+body {
+    cursor: url("/img/mouse.cur"), auto;
+    &::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+        background-color: #F5F5F5;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        background-color: #018EE8;
+    }
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        background-color: #F5F5F5;
+    }
+    overflow-x: hidden;
+
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: url("/img/mouse2.cur"), auto;
+}
+
+img {
+    display: block;
+}
+
+h1,
+p {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.header .nav li.item-disabled {
+    cursor: not-allowed;
+    font-family:"微软雅黑";
+}

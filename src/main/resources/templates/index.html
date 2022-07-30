@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人博客 - KaKaBu</title>
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/content_right.css">
+    <link rel="stylesheet" href="/css/footer.css">
+</head>
+<body>
+    <!-- 头部导航区 -->
+    <div class="header">
+        <div class="banner">
+            <a href="/index">KaKaBu</a>
+        </div>
+        <div class="nav">
+            <ul class="clearfix">
+                <li class="item-active"><a href="/index">刷题</a></li>
+                <li class="item-disabled"><a href="#">算法</a></li>
+                <li class="item-disabled"><a href="#">JVM</a></li>
+                <li class="item-disabled"><a href="#">多线程</a></li>
+                <li class="item-disabled"><a href="#">MySQL</a></li>
+                <li class="item-disabled"><a href="#">收藏夹</a></li>
+                <li class="item-disabled"><a href="#">问答专区</a></li>
+                <li class="item-disabled"><a href="#">留言板</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--  内容区域  -->
+    <div class="content clearfix">
+        <!-- 左部面板 -->
+        <div class="content-l clearfix">
+            <div class="main-content clearfix">
+                <!-- 公告栏 -->
+                <div class="notice">
+                    <span>公告看留言板</span>
+                    <button class="notice-close">×</button>
+                </div>
+                <!-- 文章列表                -->
+                <div class="articles">
+                </div>
+                <!-- 文章分页按钮                -->
+                <div class="pagination clearfix">
+                    <ul class="list">
+                        <li class="pg-active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 右部面板 -->
+        <div class="content-r clearfix">
+            <!-- 音乐播放器 -->
+            <div class="music-player clearfix">
+                <!-- 播放器头部 -->
+                <div class="music-player-header">
+                    <span class="header-intro">音乐播放器</span>
+                    <span class="header-close"></span>
+                    <span class="header-arrow header-arrow-up"></span>
+                </div>
+                <!-- 播放器面板 -->
+                <div id="music-box" class="music-box">
+                    <div class="music-bar"></div>
+                    <div class="music-panel"></div>
+                    <audio id="music" src="/sounds/sama.mp3" loop></audio>
+                </div>
+                <!-- 播放器底部按钮 -->
+                <div id="music-buttons" class="music-buttons clearfix">
+                    <div class="sound-button clearfix">
+                        <div class="btn-sub music-sub"></div>
+                        <div class="music-num">30</div>
+                        <div class="btn-add music-add"></div>
+                    </div>
+                    <div class="play-button music-pause"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部区域 -->
+    <div class="footer">
+        © 2021-2022 Sylvie233. Powered by 腾讯云. Theme By Sylvie233 | 服务器状态 | Donate | 站点地图
+    </div>
+
+</body>
+<script src="/js/jquery-3.3.1.min.js"></script>
+<script src="/js/articles.js"></script>
+<script src="/js/paginations.js"></script>
+<script src="/js/index.js"></script>
+<script src="/js/content_right.js"></script>
+</html>

@@ -1,0 +1,12 @@
+.footer {
+  width: 100%;
+  color: #eeeeee;
+  font-size: 12px;
+  text-align: center;
+  padding: 50px;
+}
+.footer::selection {
+  background: #d9534f;
+  color: white;
+}
+/*# sourceMappingURL=footer.css.map */

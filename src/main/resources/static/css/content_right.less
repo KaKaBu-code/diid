@@ -1,0 +1,171 @@
+
+
+.music-add {
+    background-image: url("/img/music/add1.png");
+}
+
+.music-sub {
+    background-image: url("/img/music/sub1.png");
+}
+
+.music-pause {
+    background-image: url("/img/music/pause1.png");
+}
+
+.music-play {
+    background-image: url("/img/music/play1.png");
+}
+
+.header-arrow-up {
+    background-image: url("/img/music/up.png");
+}
+
+.header-arrow-down {
+    background-image: url("/img/music/down.png");
+}
+
+@music-btn-size: 20px;
+
+.content-r {
+    display: inline-block;
+    float: right;
+    width: 35%;
+    .music-player {
+        position: relative;
+        margin-top: 30px;
+        width: 360px;
+        float: left;
+        background-color: rgba(230,238,232,0.3);
+        transition: box-shadow 0.5s;
+        &:hover {
+            box-shadow: 0 0 35px 8px black;
+        }
+        .music-player-header {
+            color: white;
+            background-color: rgba(10,10,0,0.7);
+            border-color: #000;
+            font-size: 14px;
+            padding: 10px 15px;
+            border-bottom: 1px solid transparent;
+            border-top-right-radius: 3px;
+            border-top-left-radius: 3px;
+            .header-arrow {
+                display: inline-block;
+                margin-right: 15px;
+                float: right;
+                width: 14px;
+                height: 14px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: white;
+                border-radius: 7px;
+                position: relative;
+                top: 3px;
+            }
+            .header-close {
+                display: inline-block;
+                float: right;
+                width: 14px;
+                height: 14px;
+                border-radius: 7px;
+                background-image: url("/img/music/close.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: white;
+                position: relative;
+                top: 3px;
+            }
+        }
+        .music-box {
+            height: 360px;
+            width: 100%;
+            position: relative;
+            box-sizing: border-box;
+            .music-bar {
+                width: 120px;
+                height: 92px;
+                position: absolute;
+                left: 48%;
+                top: 4%;
+                background: url("/img/music/panelbar.png") no-repeat;
+                transition: all 0.3s 0.3s;
+                transform-origin: 12px 12px;
+                transform: rotate(0deg);
+                z-index: 2;
+            }
+            .music-panel {
+                width: 250px;
+                height: 250px;
+                position: absolute;
+                left: 18%;
+                top: 26%;
+                background: url("/img/music/panel.png") no-repeat;
+                transform: rotate(0deg);
+                background-size: cover;
+                z-index: 1;
+                transition: all 0.5s linear;
+            }
+            audio {
+            }
+        }
+        .music-buttons {
+            margin-top: 20px;
+            color: white;
+            background-color: rgba(230,238,232,0.6);
+            border-color: #000;
+            font-size: 14px;
+            padding: 10px 15px;
+            border-top: 1px solid transparent;
+            border-bottom-right-radius: 3px;
+            border-bottom-left-radius: 3px;
+            .sound-button {
+                width: 120px;
+                position: relative;
+                top: 5px;
+                box-sizing: border-box;
+                text-align: center;
+                float: right;
+                .btn-sub {
+                    float: left;
+                    height: @music-btn-size;
+                    width: @music-btn-size;
+                    background-size: cover;
+                    &:hover {
+                        background-image: url("/img/music/sub2.png");
+                    }
+                }
+                .music-num {
+                    height: @music-btn-size;
+                    position: relative;
+                    color: black;
+                    top: -2px;
+                    display: inline-block;
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+                .btn-add {
+                    float: right;
+                    height: @music-btn-size;
+                    width: @music-btn-size;
+                    background-size: cover;
+                    &:hover {
+                        background-image: url("/img/music/add2.png");
+                    }
+                }
+            }
+            .play-button {
+                float: left;
+                width: @music-btn-size + 10;
+                height: @music-btn-size + 10;
+                background-size: cover;
+                transition: all 0.5s;
+                &:hover.music-pause {
+                    background-image: url("/img/music/pause2.png");
+                }
+                &:hover.music-play {
+                    background-image: url("/img/music/play2.png");
+                }
+            }
+        }
+    }
+}

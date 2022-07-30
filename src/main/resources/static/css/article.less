@@ -1,0 +1,136 @@
+// 内容区域样式
+*::selection {
+    background: #d9534f;
+    color: white;
+}
+
+.content {
+    width: 100%;
+    .content-l {
+        display: inline-block;
+        float: left;
+        width: 65%;
+        .main-content {
+            margin-top: 30px;
+            float: right;
+            padding-right: 25px;
+            .article {
+                text-align: center;
+                box-sizing: border-box;
+                width: 790px;
+                background-color: rgba(230,238,232,0.65);
+                box-shadow: 0px 0px 8px black;
+                border-radius: 4px;
+                margin-bottom: 30px;
+                padding: 19px;
+                &:hover {
+                    box-shadow: 0 0 35px 8px black;
+                }
+                .nav {
+                    padding: 8px 15px;
+                    margin-bottom: 20px;
+                    background-color: rgba(255,255,255,0.4);
+                    border-radius: 4px;
+                    font-size: 12px;
+                    span {
+                        float: left;
+                    }
+                    .div {
+                        margin: 0 1em;
+                    }
+                    .classes {
+                        color: #d2322d;
+                    }
+                    .mini-header {
+                    }
+                }
+                h1 {
+                    color: #3d4450;
+                    font-size: 32px;
+                    margin: 0 auto;
+                    text-align: center;
+                    a {
+                        color: #3d4450;
+                        transition: color 0.5s;
+                        &:hover {
+                            color: #d2322d;
+                        }
+                    }
+                }
+                .tags {
+                    text-align: center;
+                    margin: 18px 0;
+                    .tag-item {
+                        background-color: rgba(10,10,0,0.7);
+                        display: inline-block;
+                        padding: .2em .6em .3em;
+                        font-size: 75%;
+                        font-weight: bold;
+                        line-height: 1;
+                        color: #ffffff;
+                        text-align: center;
+                        white-space: nowrap;
+                        vertical-align: baseline;
+                        border-radius: .25em;
+                        transition: background-color 0.5s;
+                        &:hover {
+                            background-color: #d2322d;
+                        }
+                    }
+                }
+                .images {
+                    .head {
+                        text-align: left;
+                        background-color: rgba(255,255,255,0.9);
+                        padding: 10px 20px;
+                        margin: 0 0 20px;
+                        border-left: 5px solid rgb(0,191,255);
+                        font-size: 12pt;
+                        color: #6699FF;
+                        font-weight: bold;
+                    }
+                    .imgs-list {
+                        box-sizing: border-box;
+                        .img-item {
+                            padding: 10px 31px;
+                            .img {
+                                width: 100%;
+                                height: 400px;
+                                background-size: cover;
+                                border-radius: 4px;
+                            }
+                        }
+                    }
+                }
+                .intro {
+                    margin: 65px 0;
+                    .head {
+                        text-align: left;
+                        background-color: rgba(255,255,255,0.9);
+                        padding: 10px 20px;
+                        margin: 0 0 20px;
+                        border-left: 5px solid rgb(0,191,255);
+                        font-size: 12pt;
+                        color: #6699FF;
+                        font-weight: bold;
+                    }
+                    .body {
+                        text-align: left;
+                        font-size: 12px ;
+                        padding: 15px;
+                        border: 1px solid transparent;
+                        border-radius: 4px;
+                        color: #468847;
+                        background-color: #dff0d8;
+                    }
+                }
+            }
+        }
+    }
+    .content-r {
+    }
+}
+
+
+
+

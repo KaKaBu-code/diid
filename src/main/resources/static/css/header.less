@@ -1,0 +1,54 @@
+// 头部区域样式
+.header {
+    //position: fixed;
+    height: 55px;
+    width: 100%;
+    background-color: rgba(10,10,0,0.7);
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0px 1px 5px #000000;
+    // 头部图标样式
+    .banner {
+        display: inline-block;
+        height: 100%;
+        width: 185px;
+        background: url("/img/logo.png") no-repeat 20px 8px ;
+        a {
+            float: left;
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+            color: #ffffff;
+            //text-indent: -9999px;
+            font-size: 0px;
+        }
+    }
+    // 导航列表样式
+    .nav {
+        height: 100%;
+        display: inline-block;
+        ul {
+            height: 100%;
+            li {
+                height: 100%;
+                line-height: 55px;
+                float: left;
+                font-size: 14px;
+                &:hover {
+                    background-color: rgba(100, 90, 200, 0.7);
+                }
+                a {
+                    display: inline-block;
+                    height: 100%;
+
+                    padding: 0 15px;
+                    color: #ffffff;
+
+                }
+            }
+            .item-active {
+                background-color: rgba(138,43,226,0.7);
+            }
+        }
+    }
+}
